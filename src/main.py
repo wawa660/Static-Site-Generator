@@ -1,5 +1,6 @@
-from textnode import TextNode, TextType
+from htmlnode import HTMLNode
 
 
-tn = TextNode("hello", TextType.LINK, "google.com")
-print(tn)
+props = {"bgcolor" : "red", "color" : "black"}
+hn = HTMLNode("h1", "hello", props = props )
+print(hn)
